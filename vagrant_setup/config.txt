@@ -1,0 +1,17 @@
+# Server
+APP_SERVER=199.161.103.97
+APP_USER=kuzya_user
+APP_USER_PASS=kuzya_parol
+APP_NAME=kuzya_proj
+DJANGO_PATH=/home/$APP_NAMEe
+
+
+# Database
+APP_DB_USER=kuzya_db_user
+APP_DB_PASSWORD=ewq23eddqwe2312312wewqe
+APP_DB_NAME=kuzyadb
+
+# Vagrant
+VAGRANT_APP_BACKUP_PATH=/vagrant
+VAGRANT_SETUP_PATH=/vagrant/vagrant_setup
+VAGRANT_SCRIPT_PATH=$VAGRANT_SETUP_PATH/scripts
