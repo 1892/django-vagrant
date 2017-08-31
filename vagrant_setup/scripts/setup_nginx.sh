@@ -20,7 +20,7 @@ server {
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/home/$APP_USER/$APP_NAME/$APP_NAME.sock;
+        proxy_pass http://unix:/home/$APP_USER/$APP_NAME.sock;
     }
 }
 EOF2
