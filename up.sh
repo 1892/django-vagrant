@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-APP_SERVER=199.161.103.97
-APP_USER=kuzya_user
-APP_NAME=kuzya_proj
+. vagrant_setup/config.txt
+
+APP_SERVER=$APP_SERVER
+APP_USER=$APP_USER
+APP_NAME=$APP_NAME
 
 touch Vagrantfile
 

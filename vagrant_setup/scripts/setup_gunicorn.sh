@@ -3,11 +3,11 @@
 . /vagrant/vagrant_setup/config.txt
 
 
-sudo touch /etc/systemd/system/gunicorn.service
+sudo touch /etc/systemd/system/$APP_NAME-gunicorn.service
 
-cat > /etc/systemd/system/gunicorn.service << EOF1
+cat > /etc/systemd/system/$APP_NAME-gunicorn.service << EOF1
 [Unit]
-Description=gunicorn daemon
+Description=$APP_NAME gunicorn daemon
 After=network.target
 
 [Service]

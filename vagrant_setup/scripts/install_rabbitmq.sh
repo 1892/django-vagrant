@@ -2,6 +2,8 @@
 
 . /vagrant/vagrant_setup/config.txt
 
+#https://linode.com/docs/development/python/task-queue-celery-rabbitmq/
+
 wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb
 
 sudo dpkg -i erlang-solutions_1.0_all.deb
@@ -15,12 +17,12 @@ sudo apt-get update
 sudo apt-get install -y rabbitmq-server
 
 
-systemctl enable rabbitmq-server
+sudo systemctl enable rabbitmq-server
  
 # To start the service:
-systemctl start rabbitmq-server
+sudo systemctl start rabbitmq-server
 
-sudo rabbitmqctl add_user $APP_DB_USER $APP_USER_PASS 
+sudo rabbitmqctl add_user $APP_DB_USER $APP_USER_PASS
 
 sudo rabbitmqctl set_user_tags $APP_DB_USER administrator
 

@@ -9,6 +9,11 @@ cd /home/$APP_USER
 mkdir $APP_NAME
 cd $APP_NAME
 
+mkdir logs
+
+touch logs/django_requests.log
+touch logs/mylog.log
+
 sudo -H pip3 install --upgrade pip
 sudo -H pip3 install virtualenv
 
@@ -18,7 +23,7 @@ virtualenv .venv
 source .venv/bin/activate
 
 # install some require lib
-pip3 install django gunicorn psycopg2
+pip3 install Django==1.11.7 gunicorn psycopg2
 
 django-admin.py startproject $APP_NAME .
 
